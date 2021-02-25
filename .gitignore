@@ -1,0 +1,15 @@
+node_modules/
+password.txt
+How to make a website.txt
+
+/client/build
+
+.DS_Store
+/client/.env.local
+/client/.env.development.local
+/client/.env.test.local
+/client/.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
