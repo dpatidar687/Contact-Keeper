@@ -2,7 +2,7 @@
 
 /* Global Styles */
 :root {
-  --primary-color: #003699;
+  --primary-color: #2471ff;
   --dark-color: #333333;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
@@ -22,7 +22,25 @@ body {
   background-color: #fff;
   color: #333;
 }
-
+.formPadding{
+  margin-left : 15px;
+  margin-bottom: 20px;
+  padding : 30px;
+  border : 1.5px solid rgb(11, 98, 156);
+  border-radius: 10px;
+}
+.down {
+  margin-top : 80px;
+}
+.scroll{
+  overflow-y: auto;
+  height: 600px;
+  margin-right:20px;
+}
+.search{
+  width: 600px;
+  margin-left: 20px;
+}
 a {
   color: var(--primary-color);
   text-decoration: none;
@@ -93,7 +111,7 @@ img {
 /* Cards */
 .card {
   padding: 1rem;
-  border: #ccc 1px dotted;
+  border: rgb(238, 236, 236) 1px dotted;
   margin: 0.7rem 0;
 }
 
@@ -430,7 +448,7 @@ table th {
     display: block;
     text-align: center;
   }
-
+ 
   .navbar h1 {
     margin-bottom: 0.6rem;
   }
@@ -439,4 +457,7 @@ table th {
     text-align: center;
     justify-content: center;
   }
+}
+.contactItem:hover {
+  background-color: rgb(206, 220, 250)
 }

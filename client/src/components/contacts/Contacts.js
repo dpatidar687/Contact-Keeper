@@ -19,9 +19,11 @@ const Contacts = () => {
   }
 
   return (
-    <Fragment>
+    <Fragment >
+      
       {contacts !== null && !loading ? (
-        <TransitionGroup>
+        <TransitionGroup className = 'formPadding scroll'>
+          <h1 className= 'text-primary '>Your Contacts .....</h1>
           {filtered !== null
             ? filtered.map((contact) => (
                 <CSSTransition
@@ -29,7 +31,7 @@ const Contacts = () => {
                   timeout={500}
                   classNames="item"
                 >
-                  <ContactItem key={contact.id} contact={contact} />
+                  <ContactItem  key={contact.id} contact={contact} />
                 </CSSTransition>
               ))
             : contacts.map((contact) => (
