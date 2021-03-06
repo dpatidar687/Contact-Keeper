@@ -2,10 +2,10 @@
 
 /* Global Styles */
 :root {
-  --primary-color: #2471ff;
-  --dark-color: #333333;
+  --primary-color: #0998f8;
+  --dark-color: rgb(34, 177, 243);
   --light-color: #f4f4f4;
-  --danger-color: #dc3545;
+  --danger-color: #f52a07;
   --success-color: #28a745;
 }
 
@@ -28,6 +28,7 @@ body {
   padding : 30px;
   border : 1.5px solid rgb(11, 98, 156);
   border-radius: 10px;
+  /* display: inline-block; */
 }
 .down {
   margin-top : 80px;
@@ -237,7 +238,7 @@ img {
   text-align: center;
   margin: 0.3rem;
   background: var(--light-color);
-  color: #333;
+  color: rgb(56, 55, 55);
   border-radius: 5px;
 }
 
@@ -458,6 +459,29 @@ table th {
     justify-content: center;
   }
 }
+.contactItem{
+  display: grid;
+  grid: 150px / auto auto auto;
+  padding :auto;
+
+}
 .contactItem:hover {
-  background-color: rgb(206, 220, 250)
+  background-color: rgb(206, 220, 250);
+}
+.qrcodediv{
+  position: relative;
+  padding : 10px 10px 10px 10px ;
+  
+  margin-left:180px;
+}
+.qrcode{
+  position:relative;
+  text-align:center;
+
+}
+
+.deledit{
+  border:1px solid white;
+  border-radius:7px;
+  margin:5px;
 }

@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import ContactContext from '../../context/contact/contactContext';
+import Qrcode from '../qrcode/Qrcode';
+
 
 const ContactItem = ({ contact }) => {
   const contactContext = useContext(ContactContext);
@@ -15,10 +17,11 @@ const ContactItem = ({ contact }) => {
 
   return (
     <div className="card bg-light formPadding contactItem">
+       <div className = 'contactData'>
       <h3 className="text-primary text-left">
-        {name}{' '}
+        {name}{'     '}
         <span
-          style={{ float: 'right' }}
+          style={{ float: 'right' ,'font-size' : '15px','color' :'black'}}
           className={
             'badge' +
             (type === 'professional' ? 'badge-success' : 'badge-primary')
@@ -42,15 +45,18 @@ const ContactItem = ({ contact }) => {
       </ul>
       <p>
         <button
-          className="btn btn-dark btn-sm"
+          className="btn btn-dark btn-lg deledit"
           onClick={() => setCurrent(contact)}
         >
           Edit
         </button>
-        <button className="btn btn-danger btn-sm" onClick={onDelete}>
+        <button className="btn btn-danger btn-lg deledit" onClick={onDelete}>
           Delete
         </button>
       </p>
+      </div>
+      <div><Qrcode qrString = {'Name :- '+name+'\n'+'Email :- '+email+'\n'+'Phone :- '+phone} /></div>
+      {/* <div><EmailShare contact= {contact} /></div> */}
     </div>
   );
 };
