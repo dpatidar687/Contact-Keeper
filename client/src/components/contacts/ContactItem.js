@@ -19,9 +19,9 @@ const ContactItem = ({ contact }) => {
     <div className="card bg-light formPadding contactItem">
        <div className = 'contactData'>
       <h3 className="text-primary text-left">
-        {name}{'     '}
+        {name.charAt(0).toUpperCase()+name.slice(1)}{' '}
         <span
-          style={{ float: 'right' ,'font-size' : '15px','color' :'black'}}
+          style={{ float: 'right' ,'font-size' : '14px','color' :'rgb(250, 122, 62)'}}
           className={
             'badge' +
             (type === 'professional' ? 'badge-success' : 'badge-primary')
